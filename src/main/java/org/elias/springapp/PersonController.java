@@ -35,11 +35,6 @@ public class PersonController {
         return personRepository.findAllByFirstNameLike(username);
     }
 
-    @DeleteMapping("{id}")
-    int delete(@PathVariable("id") int id){
-        personRepository.delete(id);
-        return id;
-    }
 
 
 
